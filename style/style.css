@@ -58,13 +58,13 @@ body{
 }
 @media only screen and (max-width: 576px){
     .item{
-        width: 50%;
+        width: 100%;
     }
     .item p{
         text-align: center;
     }
     .item img {
-        margin: 50px 60px;
+        margin: 50px 170px;
         border-radius: 50%;
     }
 }
