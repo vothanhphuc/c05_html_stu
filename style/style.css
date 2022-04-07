@@ -6,6 +6,7 @@ body{
 }
 #welcome{
     padding: 20px 40px;
+    width: 100%;
 }
 #welcome h2{
     height: 55px;
@@ -20,9 +21,10 @@ body{
     margin: 10px auto;
     text-align: center;
 }
-#welcome img{
-    display: block;
-    margin: 0 auto;
+.prites{
+    background-image: url("../img/about2.jpg");
+    background-size: cover;
+    height: 500px;
 }
 #what-we-do{
     padding: 20px 40px;
@@ -54,25 +56,62 @@ body{
     margin: 50px 105px;
     border-radius: 50%;
 }
+@media only screen and (max-width: 576px){
+    .item{
+        width: 50%;
+    }
+    .item p{
+        text-align: center;
+    }
+    .item img {
+        margin: 50px 60px;
+        border-radius: 50%;
+    }
+}
+/* Phan Dau Tien */
 .father{
     background-image: url("../img/1.jpg");
     background-size: cover;
-    width: 100%;
     height: 600px;
     position: relative;
 }
 .logo{
-    width: 250px;
-    height: 200px;
     position: absolute;
-    top: 5px;
-    left: 35px;
+    top: 5%;
+    left: 10%;
 }
 .logo h3{
     font-size: 40px;
     color: white;
     text-align: center;
+    margin: 0;
 }
+.topnav{
+    background-color: orange;
+    position: relative;
+    display: none;
+}
+.topnav #myLinks {
+    display: none;
+}
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}  
 .nav{
     width: 600px;
     height: 150px;
@@ -137,10 +176,38 @@ body{
     color: white;
     font-weight: bold;
 }
+@media only screen and (max-width: 576px){
+    .paragrap{
+        width: 100%;
+        top: 40%;
+    }
+    .buton{
+        top: 80%;
+    }
+    .paragrap h1{
+        font-size: 35px;
+    }
+    .paragrap h4{
+        font-size: 25px;
+    }
+    .nav{
+        display: none;
+    }
+    .topnav{
+        display: block;
+        width: 50%;
+        left: 50%;
+    }
+    .logo h3{
+        font-size: 30px;
+    }
+}
+
+/* Phan Giua */
 .sta{
     background-image: url("/img/bg.jpg");
+    background-size: cover;
     position: relative;
-    width: 100%;
     height: 450px;
 }
 .sta h2{
@@ -178,6 +245,22 @@ body{
     font-size: 25px;
     margin-top: 0;
 }
+@media only screen and (max-width: 576px){
+    .sta{
+        height: 600px;
+        width: 100%;
+    }
+    .sta h2{
+        top: 5%;
+    }
+    .static{
+        display: block;
+        bottom: 275px;
+        left: 10%;
+    }
+}
+
+/* Phan Gan Giua */
 .servi{
     background-color: rgb(228, 222, 222);
     position: relative;
@@ -234,6 +317,27 @@ body{
     font-size: 17px;
     text-align: center;
 }
+@media only screen and (max-width: 576px){
+    .servi{
+        height: 1300px;
+    }
+    .le{
+        width: 35%;
+    }
+    .ri{
+        width: 60%;
+        right: 0%;
+    }
+    .gro{
+        width: 80%;
+        margin-top: 5%;
+    }
+    .gro h3{
+        margin-bottom: 0;
+    }
+}
+
+/* Phan testi */
 .testi{
     background-image: url("../img/bg.jpg");
     background-size: cover;
@@ -252,7 +356,7 @@ body{
     margin-top: 75px;
 }
 .lorem{
-    width: 350px;
+    width: 30%;
     margin-top: 250px;
     font-size: 20px;
     text-align: center;
@@ -266,6 +370,18 @@ body{
     color: orange;
     padding-left: 150px;
 }
+@media only screen and (max-width: 576px){
+    .testi{
+        height: 1800px;
+        display: block;
+    }
+    .lorem{
+        margin: 0 auto;
+        padding-top: 30%;
+    }
+}
+
+/*  */
 .our{
     width: 100%;
     height: 550px;
@@ -302,12 +418,31 @@ body{
 .read h5 p a{
     margin-left: 15px;
 }
+@media only screen and (max-width: 576px){
+    .our{
+        display: block;
+        height: auto;
+    }
+    .our h2{
+        top: -10%;
+    }
+    .read{
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+/*  */
 .map{
     margin-top: 35px;
 }
 .map iframe{
     width: 100%;
+    border: 0px;
+    height: 450px;
 }
+
+/*  Phan Cuoi */
 .end{
     background-color: black;
     width: 100%;
@@ -338,4 +473,71 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: white;
+}
+.mail_box{
+    height: 30px;
+}
+.mailbox
+{
+    height: 30px;
+    width: 60%;
+}
+.email-btn{
+    height: 30px;
+    width: 35%;
+}
+.social-mds {
+    list-style: none;
+    overflow: auto;
+    padding-left: 0;
+}
+
+.social-mds li {
+    float: left;
+}
+
+.social-md-item a {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+#fb {
+    background-color: #3b5998;
+}
+
+#twt {
+    background-color: #1da1f2;
+}
+
+#dribble {
+    background-color: #ea4c89;
+}
+
+#google {
+    background-color: #f44336;
+}
+
+.social-md-item a i {
+    color: #fff;
+}
+@media only screen and (max-width: 576px){
+    .end{
+        height: 500px;
+    }
+    .about_us{
+        width: 15%;
+    }
+    .about_us h2{
+        font-size: 15px;
+    }
+    .about_us p{
+        font-size: 10px;
+    }
+    .about_us ul{
+        padding-left: 0;
+    }
 }
