@@ -256,7 +256,9 @@ body{
     .static{
         display: block;
         bottom: 275px;
-        left: 10%;
+    }
+    .year{
+        margin-left: 200px;
     }
 }
 
